@@ -1,0 +1,10 @@
+
+kagglehub
+pandas
+nltk
+numpy
+sentence-transformers
+faiss-cpu
+joblib
+optimum.onnxruntime
+requests

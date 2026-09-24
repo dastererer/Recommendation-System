@@ -1,0 +1,45 @@
+{
+  "OUTPUT_DATASET_FILE_PATH": "data/raw",
+  "CATEGORIES_FILE_PATH": "data/raw/categories.json",
+  "COLOUMS_TO_DROP":
+                    [
+                      "Posted_from",
+                      "Job_URL",
+                      "Search_Keyword",
+                      "Posted_from",
+                      "Category1_URL_search",
+                      "Category2_URL_search",
+                      "Category3_URL_search",
+                      "Category4_URL_search",
+                      "Category5_URL_search",
+                      "Category6_URL_search",
+                      "Category7_URL_search",
+                      "Category8_URL_search",
+                      "Category9_URL_search",
+                      "Freelancers_Num",
+                      "Connects_Num",
+                      "New_Connects_Num",
+                      "Payment_Situation",
+                      "Enterprise_Client",
+                      "Freelancers_Num",
+                      "Connects_Num",
+                      "New_Connects_Num",
+                      "Hourly_Rate",
+                      "highlight"],
+
+  "USE_STOPWORDS": true,
+  "MODEL_NAME": "nomic-ai/nomic-embed-text-v1.5",
+  "BATCH_SIZE":8,
+  "API_URL": "http://localhost:12176",
+  "ENDPOINTS":
+              [
+                "/api/jobs",
+                "/api/profiles/{id}/freelancer",
+                "/api/profiles/{id}/employer",
+                "/api/reviews/user/{id}/rating",
+                "/api/profiles/{id}/skills",
+                "/api/jobapplications",
+                "/api/jobapplications/job/{id}",
+                "/api/payments"
+              ]
+}
